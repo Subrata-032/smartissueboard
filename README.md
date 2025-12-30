@@ -89,22 +89,17 @@ smart-issue-board/
 ---
 
 ## 📸 Screenshots
-<img width="1894" height="852" alt="image" src="https://github.com/user-attachments/assets/3ac0fb00-8fcd-44c9-a8e4-51ec29443be6" />
-
-<img width="1896" height="860" alt="image" src="https://github.com/user-attachments/assets/a94fe293-5a7c-4c6f-b685-5d97d131dd5a" />
-
-<img width="1897" height="775" alt="image" src="https://github.com/user-attachments/assets/a76faa0b-f013-422e-ad5f-716cfcaca0a3" />
-
-<img width="1897" height="763" alt="image" src="https://github.com/user-attachments/assets/9948189e-ac74-4d49-aec6-754760058b27" />
-
----
+<img width="1920" height="1080" alt="Screenshot 2025-12-30 130233" src="https://github.com/user-attachments/assets/2e204e29-6284-4639-8840-d1f78463e991" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-30 130217" src="https://github.com/user-attachments/assets/5c530add-5062-4106-aef4-3ecce7d02548" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-30 130259" src="https://github.com/user-attachments/assets/1b7f803d-95ca-4271-8e07-2f0c7f0e162d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/28db4848-0f5a-447a-8bd2-ad2fb7d78d0c" />
 
 ## ⚙️ Setup & Installation
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Dipankar1508/Smart-Issue-Board.git
+git clone https://github.com/Subrata-032/smartissueboard.git
 cd smart-issue-board
 ```
 
@@ -182,7 +177,7 @@ service cloud.firestore {
 
 ## 👨‍💻 Author
 
-**Dipankar Sarkar**
+**Subrata Bera**
 Built as a learning + demonstration project using modern frontend and cloud technologies.
 
 ---
