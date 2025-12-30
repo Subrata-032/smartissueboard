@@ -16,36 +16,46 @@ export default function App() {
     return () => unsub();
   }, []);
 
-  if (!user) return <Auth onAuthSuccess={() => { }} />;
+  if (!user) return <Auth onAuthSuccess={() => {}} />;
 
   return (
-    <main className="app-main">
-      <div className="app-container">
-        <nav className="navbar">
-          <div className="nav-left">
-            <div className="logo-badge">SIB</div>
+    <div className="ai-root">
+      {/* Sidebar */}
+      <aside className="ai-sidebar">
+        <div className="ai-logo">SIB</div>
 
-            <div className="nav-text">
-              <h2 className="nav-title">Smart Issue Board</h2>
-              <span className="nav-user">
-                {user.email}
-              </span>
-            </div>
+        <div className="ai-user-box">
+          <span className="ai-user-label">Logged in as</span>
+          <span className="ai-user-email">{user.email}</span>
+        </div>
+
+        <button
+          className="ai-logout"
+          onClick={() => signOut(auth)}
+        >
+          Logout
+        </button>
+      </aside>
+
+      {/* Main Area */}
+      <main className="ai-main">
+        <header className="ai-header">
+          <h1 className="ai-title">Smart Issue Board</h1>
+          <p className="ai-subtitle">
+            AI-powered issue tracking & collaboration
+          </p>
+        </header>
+
+        <section className="ai-content">
+          <div className="ai-card">
+            <CreateIssue user={user} />
           </div>
 
-          <button
-            className="logout-btn"
-            onClick={() => signOut(auth)}
-          >
-            Logout
-          </button>
-        </nav>
-
-        <CreateIssue user={user} />
-        <IssueList />
-      </div>
-    </main>
-
+          <div className="ai-card">
+            <IssueList />
+          </div>
+        </section>
+      </main>
+    </div>
   );
-
 }
